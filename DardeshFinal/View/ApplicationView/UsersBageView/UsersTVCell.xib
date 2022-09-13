@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="UsersTVCell" customModule="DardeshFinal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="294.5" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="8kH-6j-Zil">
+                        <rect key="frame" x="5" y="5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Jq2-Bd-x0b"/>
+                            <constraint firstAttribute="width" constant="60" id="NRD-Gb-ago"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pJZ-mV-7Wj">
+                        <rect key="frame" x="75" y="5" width="219.5" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kr-Ka-Ugq">
+                                <rect key="frame" x="0.0" y="0.0" width="219.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjU-MR-L9R">
+                                <rect key="frame" x="0.0" y="32.5" width="219.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="avatarViewBackground"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="colorCell"/>
+                <constraints>
+                    <constraint firstItem="pJZ-mV-7Wj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4fz-HY-Oh3"/>
+                    <constraint firstItem="8kH-6j-Zil" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="A5X-77-3ig"/>
+                    <constraint firstItem="8kH-6j-Zil" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Aes-J0-Xer"/>
+                    <constraint firstAttribute="trailing" secondItem="pJZ-mV-7Wj" secondAttribute="trailing" id="CHl-yv-P4e"/>
+                    <constraint firstItem="pJZ-mV-7Wj" firstAttribute="leading" secondItem="8kH-6j-Zil" secondAttribute="trailing" constant="10" id="QTX-xX-voX"/>
+                    <constraint firstAttribute="bottom" secondItem="pJZ-mV-7Wj" secondAttribute="bottom" constant="5" id="cOw-OR-C1T"/>
+                    <constraint firstAttribute="bottom" secondItem="8kH-6j-Zil" secondAttribute="bottom" constant="5" id="eyQ-LL-UkY"/>
+                    <constraint firstItem="8kH-6j-Zil" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="yfH-hu-TwN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageOutlet" destination="8kH-6j-Zil" id="ecz-UY-usj"/>
+                <outlet property="statusOutlet" destination="ZjU-MR-L9R" id="Q7T-yV-ewa"/>
+                <outlet property="userNameOutlet" destination="8kr-Ka-Ugq" id="UT3-Zo-5DW"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="80.022321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="184" height="184"/>
+        <namedColor name="avatarViewBackground">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorCell">
+            <color red="0.99599999189376831" green="0.99599999189376831" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

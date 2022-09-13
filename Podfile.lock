@@ -1,0 +1,16 @@
+PODS:
+  - SKPhotoBrowser (7.0.0)
+
+DEPENDENCIES:
+  - SKPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - SKPhotoBrowser
+
+SPEC CHECKSUMS:
+  SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
+
+PODFILE CHECKSUM: 185a4d9f0c586e122789132e9f76d7b586035a96
+
+COCOAPODS: 1.8.4
